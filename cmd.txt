@@ -1,0 +1,10 @@
+
+# CHI-Taxi
+python train.py  --fill_zeroes --es_patience 40 --save crosstres_taxi_chicago  --row_num 17 --col_num 28 --week_len 7 --day_len 24 --inoutblock_num 2  --dataset_path ../data/CHI-Taxi.npy
+# DC-Taxi
+python train.py  --fill_zeroes --es_patience 40 --save crosstres_taxi_dc  --row_num 17 --col_num 28 --week_len 7 --day_len 24 --inoutblock_num 2  --dataset_path ../data/DC-Taxi.npy
+
+# NYCBike
+python train.py  --fill_zeroes --es_patience 40 --save nyc_bike  --row_num 10 --col_num 20 --week_len 7 --day_len 48 --inoutblock_num 2 --dataset_path ../data/NYC-Bike.npy
+# NYCTaxi
+python train.py  --fill_zeroes --es_patience 40 --save nyc_taxi  --row_num 10 --col_num 20 --week_len 7 --day_len 48 --inoutblock_num 2 --dataset_path ../data/NYC-Taxi.npy

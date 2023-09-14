@@ -16,6 +16,7 @@ class StandardScaler():
         return (data * self.std) + self.mean
 
 def to_slice_with_time_embed(data, len, weekLen, dayLen):
+    #先处理形状，然后切片
     shape = data.shape
     reshapedData = data.reshape(shape[0],shape[1]*shape[2],shape[3])
     sumLen = shape[0]
@@ -150,3 +151,7 @@ def dataset_partition(data_path, train_weight, valid_weight, test_weight, close_
 
     data['Scaler'] = BothFlowScaler
     return data
+
+
+
+
